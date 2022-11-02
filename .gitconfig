@@ -1,0 +1,16 @@
+# ~/.gitconfig
+ 
+[includeIf "gitdir:~/work/senior/"] # include for all .git projects under personnal/ 
+path = ~/work/senior/.gitconfig.pers
+ 
+[includeIf "gitdir:~/work/intern/"]
+path = ~/work/intern/.gitconfig.work
+ 
+[core]
+excludesfile = ~/.gitignore      # valid everywhere
+
+[alias]
+lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+
+[pull]
+	rebase = false

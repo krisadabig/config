@@ -1,0 +1,12 @@
+# ~/personal/.gitconfig.pers
+ 
+[user]
+email = krisada.m@ku.th
+name = krisadabig
+ 
+[github]
+user = krisadabig
+ 
+[core]
+sshCommand = "ssh -i ~/.ssh/personal"
+
